@@ -1,5 +1,30 @@
+//single selection
+//multiple selection
+import data from "./data";
+
+import { useState } from "react";
+
 const Accordian = () => {
-  return <div>Accordion</div>;
+  const [selected, setSelected] = useState(null);
+
+  return (
+    <div className="wrapper">
+      <div className="accordian">
+        {data && data.length > 0 ? (
+          data.map((dataItem) => (
+            <div className="item">
+              <div className="title">
+                <h1>{dataItem.question}</h1>
+                <span>+</span>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div>No data Found!</div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Accordian;
