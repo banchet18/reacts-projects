@@ -8,7 +8,7 @@ const Accordian = () => {
   const [selected, setSelected] = useState(null);
 
   const handleSingleSelection = (getCurrentId) => {
-    console.log(getCurrentId);
+    selected(getCurrentId);
   };
 
   return (
