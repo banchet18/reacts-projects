@@ -3,15 +3,20 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Badge from "@mui/material/Badge";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light">
+      <Navbar bg="light" data-bs-theme="light" style={{ height: "60px" }}>
         <Container>
           <Nav className="me-auto">
-            <Navbar.Brand href="#home">Add to Cart</Navbar.Brand>
-            <Nav.Link href="#home">Home</Nav.Link>
+            <NavLink to="/" className="text-decoration-none mx-3">
+              Add to Cart
+            </NavLink>
+            <NavLink to="/" className="text-decoration-none">
+              Home
+            </NavLink>
           </Nav>
 
           <Badge badgeContent={4} color="primary">
