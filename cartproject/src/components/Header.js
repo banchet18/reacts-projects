@@ -12,6 +12,8 @@ const Header = () => {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
           </Nav>
+
+          <i class="fa-solid fa-cart-shopping"></i>
         </Container>
       </Navbar>
     </>
