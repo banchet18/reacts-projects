@@ -54,7 +54,11 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          Your cart is empty
+          <div>
+            <i></i>
+            <p></p>
+            <img src="./" alt="" />
+          </div>
         </Menu>
       </Navbar>
     </>
