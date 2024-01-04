@@ -29,13 +29,35 @@ const Header = () => {
             </NavLink>
           </Nav>
 
-          <Badge badgeContent={4} color="primary">
+          <Badge
+            badgeContent={4}
+            color="primary"
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
             <i
               class="fa-solid fa-cart-shopping"
               style={{ fontSize: "25px", cursor: "pointer" }}
             ></i>
           </Badge>
         </Container>
+
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "basic-button",
+          }}
+        >
+          <MenuItem onClick={handleClose}>Profile</MenuItem>
+          <MenuItem onClick={handleClose}>My account</MenuItem>
+          <MenuItem onClick={handleClose}>Logout</MenuItem>
+        </Menu>
       </Navbar>
     </>
   );
