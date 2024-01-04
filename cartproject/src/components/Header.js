@@ -59,6 +59,7 @@ const Header = () => {
             style={{ width: "24rem", padding: 10, position: "relative" }}
           >
             <i
+              onClick={handleClose}
               className="fas fa-close smallclose"
               style={{
                 position: "absolute",
