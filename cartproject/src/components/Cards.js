@@ -1,4 +1,8 @@
-const Card = () => {
-  return <div>Card</div>;
+const Cards = () => {
+  return (
+    <div clas>
+      <h2>sdasd</h2>
+    </div>
+  );
 };
-export default Card;
+export default Cards;
