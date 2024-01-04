@@ -54,7 +54,7 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <div className="card_details">
+          <div className="card_details d-flex justify-content-center align-items-center">
             <i
               className="fas fa-close smallclose"
               style={{
@@ -65,7 +65,7 @@ const Header = () => {
                 cursor: "pointer",
               }}
             ></i>
-            <p>Your cart is empty</p>
+            <p style={{ fontSize: 22 }}>Your cart is empty</p>
             <img src="./cart.gif" alt="" />
           </div>
         </Menu>
