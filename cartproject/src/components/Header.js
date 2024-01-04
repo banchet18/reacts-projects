@@ -54,10 +54,19 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <div>
-            <i></i>
-            <p></p>
-            <img src="./" alt="" />
+          <div className="card_details">
+            <i
+              className="fas fa-close smallclose"
+              style={{
+                position: "absolute",
+                top: 2,
+                right: 20,
+                fontSize: 23,
+                cursor: "pointer",
+              }}
+            ></i>
+            <p>Your cart is empty</p>
+            <img src="./cart.gif" alt="" />
           </div>
         </Menu>
       </Navbar>
