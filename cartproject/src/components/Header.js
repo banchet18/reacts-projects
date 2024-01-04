@@ -39,7 +39,7 @@ const Header = () => {
             onClick={handleClick}
           >
             <i
-              class="fa-solid fa-cart-shopping"
+              className="fa-solid fa-cart-shopping"
               style={{ fontSize: "25px", cursor: "pointer" }}
             ></i>
           </Badge>
