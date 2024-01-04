@@ -15,7 +15,7 @@ const Header = () => {
 
           <i
             class="fa-solid fa-cart-shopping"
-            style={{ frontSize: 25, cursor: "p" }}
+            style={{ frontSize: 25, cursor: "pointer" }}
           ></i>
         </Container>
       </Navbar>
