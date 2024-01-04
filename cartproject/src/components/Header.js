@@ -17,7 +17,7 @@ const Header = () => {
           <Badge badgeContent={4} color="primary">
             <i
               class="fa-solid fa-cart-shopping"
-              style={{ frontSize: 25, cursor: "pointer" }}
+              style={{ fontSize: "25px", cursor: "pointer" }}
             ></i>
           </Badge>
         </Container>
