@@ -17,7 +17,7 @@ const CardsDetails = () => {
               <tr>
                 <td>
                   <p>
-                    <strong>Restaurant</strong> :Massala Theoryy
+                    <strong>Restaurant</strong> : Massala Theoryy
                   </p>
                   <p>
                     <strong>Price</strong> : ₹ 350
@@ -26,12 +26,12 @@ const CardsDetails = () => {
                     <strong>Dishes</strong> : North Indian, Biryani, Mughlai
                   </p>
                   <p>
-                    <strong>Total</strong> :₹ 350
+                    <strong>Total</strong> : ₹ 350
                   </p>
                 </td>
                 <td>
                   <p>
-                    <strong>Rating :</strong>
+                    <strong>Rating : </strong>
                     <span
                       style={{
                         background: "green",
@@ -44,11 +44,11 @@ const CardsDetails = () => {
                     </span>
                   </p>
                   <p>
-                    <strong>Order Review :</strong>
+                    <strong>Order Review : </strong>
                     <span>1175 + order placed from here recently </span>
                   </p>
                   <p>
-                    <strong>Remove :</strong>
+                    <strong>Remove : </strong>
                     <span>
                       <i
                         className="fas fa-trash"
