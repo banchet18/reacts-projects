@@ -1,4 +1,4 @@
-const Card = () => {
+const Cards = () => {
   return <div>Card</div>;
 };
-export default Card;
+export default Cards;
