@@ -1,12 +1,25 @@
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+
 const Cards = () => {
-<<<<<<< HEAD
   return (
-    <div clas>
-      <h2>sdasd</h2>
+    <div className="container mt-3">
+      <h2>Add to Cart Projects</h2>
+      <div className="row">
+        <Card style={{ width: "18rem" }}>
+          <Card.Img variant="top" src="holder.js/100px180" />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </div>
     </div>
   );
-=======
-  return <div>Card</div>;
->>>>>>> eee2b92ecf2ad568092920edf9c20c5f359a4646
 };
 export default Cards;
