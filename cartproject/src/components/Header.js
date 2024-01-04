@@ -54,7 +54,10 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <div className="card_details d-flex justify-content-center align-items-center">
+          <div
+            className="card_details d-flex justify-content-center align-items-center"
+            style={{ width: "24rem", padding: 10, position: "relative" }}
+          >
             <i
               className="fas fa-close smallclose"
               style={{
@@ -66,7 +69,12 @@ const Header = () => {
               }}
             ></i>
             <p style={{ fontSize: 22 }}>Your cart is empty</p>
-            <img src="./cart.gif" alt="" />
+            <img
+              src="./cart.gif"
+              alt=""
+              className="emptycart_img"
+              style={{ width: "5rem", padding: 10 }}
+            />
           </div>
         </Menu>
       </Navbar>
