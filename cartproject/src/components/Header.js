@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Badge from "@mui/material/Badge";
 
 const Header = () => {
   return (
@@ -13,10 +14,12 @@ const Header = () => {
             <Nav.Link href="#home">Home</Nav.Link>
           </Nav>
 
-          <i
-            class="fa-solid fa-cart-shopping"
-            style={{ frontSize: 25, cursor: "pointer" }}
-          ></i>
+          <Badge badgeContent={4} color="primary">
+            <i
+              class="fa-solid fa-cart-shopping"
+              style={{ frontSize: 25, cursor: "pointer" }}
+            ></i>
+          </Badge>
         </Container>
       </Navbar>
     </>
