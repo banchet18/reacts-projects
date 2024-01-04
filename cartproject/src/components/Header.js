@@ -9,8 +9,8 @@ const Header = () => {
     <>
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="#home">Add to Cart</Navbar.Brand>
           <Nav className="me-auto">
+            <Navbar.Brand href="#home">Add to Cart</Navbar.Brand>
             <Nav.Link href="#home">Home</Nav.Link>
           </Nav>
 
