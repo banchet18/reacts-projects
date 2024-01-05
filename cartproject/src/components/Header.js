@@ -5,9 +5,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Badge from "@mui/material/Badge";
 import { NavLink } from "react-router-dom";
 import Menu from "@mui/material/Menu";
+import { useSelector } from "react-redux";
 import MenuItem from "@mui/material/MenuItem";
 
 const Header = () => {
+  const getdata = useSelector((state) => state.cardReducer);
+  console.log(getdata);
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
