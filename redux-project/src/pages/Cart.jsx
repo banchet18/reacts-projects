@@ -4,8 +4,9 @@ import { remove } from "../redux/Cartslice";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart); //same as done in home component
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // same as home component
 
+  //its a add handle function it will remove product to the redux store
   const handleRemove = (id) => {
     dispatch(remove(id));
   };
