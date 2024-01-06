@@ -20,6 +20,7 @@ const Home = () => {
     return fakeProduct;
   }, []);
 
+  //its a add handle function it will add product to the redux store
   const handleAdd = (product) => {
     dispatch(add(product));
   };
