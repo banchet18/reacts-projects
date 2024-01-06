@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
-  const [product, setProduct] = useState([]); //writing array in useState means data will be comming in the form of array
+  const [products, setProducts] = useState([]); //writing array in useState means data will be comming in the form of array
 
   //now fetching the data using useEffect
   useEffect(() => {
@@ -11,12 +11,22 @@ const Home = () => {
       const res = await fetch("https://fakestoreapi.com/products");
       // converting res into  json
       const data = await res.json();
-      setProduct(data); // now updating product throw setProduct method
+      setProducts(data); // now updating product throw setProduct method
     };
     return fakeProduct;
   }, []);
-  console.log(product);
 
-  return <div>Home</div>;
+  return (
+    <div>
+      {products.map((product) => (
+        <div className="card" key={product.id}>
+          <img src={product.image} alt="" />
+          <h4>{product.title}</h4>
+          <h5>{product.price}</h5>
+          <button className="btn">Add to Cart</button>
+        </div>
+      ))}
+    </div>
+  );
 };
 export default Home;
