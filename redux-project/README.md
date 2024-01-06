@@ -15,3 +15,5 @@ step 2 : setup
 step 3 : components
 
 1. creating navbar and import in App.js
+2. structuring navbar adding links router links and adding components
+3. create span tag with item : 0
