@@ -9,3 +9,9 @@ step 2 : setup
 
 1. Setting up browser router in main.js
 2. import router in App.js
+3. Creating Home and Cart pages in src folder
+4. Routing Home and Cart pages
+
+step 3 : components
+
+1. creating navbar and import in App.js
