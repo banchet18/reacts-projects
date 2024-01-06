@@ -2,12 +2,28 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        fontSize: "20px",
+      }}
+    >
+      <span>Redux Project</span>
       <div>
         {/* linking the componets */}
-        <Link to="/">Home</Link>
-        <Link to="/cart">Cart</Link>
-        <span> items : 0</span>
+        <Link className="navLink" to="/" style={{ fontWeight: "bolder" }}>
+          Home
+        </Link>
+        <Link
+          className="navLink"
+          to="/cart"
+          style={{ fontWeight: "bolder", marginRight: "10px" }}
+        >
+          Cart
+        </Link>
+        <span style={{ fontWeight: "bolder" }}> items : 0</span>
       </div>
     </div>
   );
