@@ -31,3 +31,7 @@ step 5 : now mapping the fetch data
 
 1. mapping fetch data in home page with the help of props
 2. styling the data
+
+step 6 : redux folder
+
+further comment are there
