@@ -10,7 +10,7 @@ const CartSlice = createSlice({
   reducers: {
     //add  has two parameters state and action
     // state is connected to initialState
-    // action is connected  to user action (eg onClick etc)
+    // action is connected to user action (eg onClick etc)
     // there are the types of payload but we are not using any of them now
     add(state, action) {
       state.push(action.payload);
