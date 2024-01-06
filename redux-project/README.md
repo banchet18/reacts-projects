@@ -8,3 +8,4 @@ steps 1 : installation
 step 2 : setup
 
 1. Setting up browser router in main.js
+2. import router in App.js

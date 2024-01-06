@@ -1,11 +1,15 @@
-import { useState } from "react";
-
 import "./App.css";
+import { Routes, Route } from "react-router-dom"; //importing router
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>hello</>;
+  return (
+    <>
+      <Routes>
+        <Route path="/" element /> {/* Routing the componets or pages */}
+        <Route path="cart" element />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
