@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import add from "../redux/Cartslice";
 
 const Home = () => {
   const [products, setProducts] = useState([]); //writing array in useState means data will be comming in the form of array
+
+  const dispatch = useDispatch();
 
   //now fetching the data using useEffect
   useEffect(() => {
@@ -16,17 +20,23 @@ const Home = () => {
     return fakeProduct;
   }, []);
 
+  const handleAdd = (product) => {
+    dispatch(add(product));
+  };
   return (
     <div className="productsWrapper">
-      {products.map(({ id, image, title, price }) => (
-        <div className="card" key={id}>
-          <img src={image} alt="" />
-          <h4>{title}</h4>
-          <h5>{price}</h5>
-          <button className="btn">Add to Cart</button>
+      {products.map((product) => (
+        <div className="card" key={product.id}>
+          <img src={product.image} alt="" />
+          <h4>{product.title}</h4>
+          <h5>{product.price}</h5>
+          <button className="btn" onClick={handleAdd(product)}>
+            Add to Cart
+          </button>
         </div>
       ))}
     </div>
   );
 };
+
 export default Home;
