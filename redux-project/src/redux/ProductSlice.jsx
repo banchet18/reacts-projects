@@ -12,4 +12,15 @@ const ProductSlice = createSlice({
     data: [],
     status: STATUSES.SUCCESS,
   },
+  reducers: {
+    setProducts(state, action) {
+      state.data = action.payload;
+    },
+    setStatus(state, action) {
+      state.status = action.payload;
+    },
+  },
 });
+
+export const { setProducts, setStatus } = ProductSlice.actions;
+export default ProductSlice.reducer;
