@@ -23,6 +23,7 @@ const Home = () => {
   const handleAdd = (product) => {
     dispatch(add(product));
   };
+
   return (
     <div className="productsWrapper">
       {products.map((product) => (
