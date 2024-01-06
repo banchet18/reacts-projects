@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import add from "../redux/Cartslice";
+import { add } from "../redux/Cartslice";
 
 const Home = () => {
   const [products, setProducts] = useState([]); //writing array in useState means data will be comming in the form of array
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // useDispatch is a method get from redux to perform perticular function eg add or remove
 
   //now fetching the data using useEffect
   useEffect(() => {
