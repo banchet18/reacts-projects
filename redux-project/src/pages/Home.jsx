@@ -11,7 +11,7 @@ const Home = () => {
       const res = await fetch("https://fakestoreapi.com/products");
       // converting res into  json
       const data = await res.json();
-      setProduct(data);
+      setProduct(data); // now updating product throw setProduct method
     };
     return fakeProduct;
   }, []);
