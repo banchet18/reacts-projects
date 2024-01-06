@@ -17,7 +17,7 @@ const CartSlice = createSlice({
     },
     remove(state, action) {
       //filter method will filter items from state this will be only work when something is present in state because filter method is used in state only
-      state.filter((item) => item.id !== action.payload);
+      return state.filter((item) => item.id !== action.payload);
     },
   },
 });
