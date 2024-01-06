@@ -19,3 +19,10 @@ step 3 : components
 3. create span tag with item : 0
 4. div div span,link,link,link,span div div
 5. styling the navbar
+
+step 4 : Fetch the data
+
+1. fetch data in home component
+2. use hooks for that
+3. fetch data using async await
+4. then store data in product variable
