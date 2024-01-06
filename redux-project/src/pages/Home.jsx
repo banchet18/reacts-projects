@@ -17,12 +17,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      {products.map((product) => (
-        <div className="card" key={product.id}>
-          <img src={product.image} alt="" />
-          <h4>{product.title}</h4>
-          <h5>{product.price}</h5>
+    <div className="productsWrapper">
+      {products.map(({ id, image, title, price }) => (
+        <div className="card" key={id}>
+          <img src={image} alt="" />
+          <h4>{title}</h4>
+          <h5>{price}</h5>
           <button className="btn">Add to Cart</button>
         </div>
       ))}

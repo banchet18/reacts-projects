@@ -26,3 +26,8 @@ step 4 : Fetch the data
 2. use hooks for that
 3. fetch data using async await
 4. then store data in product variable
+
+step 5 : now mapping the fetch data
+
+1. mapping fetch data in home page with the help of props
+2. styling the data
