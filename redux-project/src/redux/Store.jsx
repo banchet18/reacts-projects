@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit"; //importing configStore function from reduxtoolkit
+
 import cartReducer from "./Cartslice"; //importing cartReducer from file
 
 // store is like storage

@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  //useSelector always has callBack function
+  //useSelector always have all states
+  //state.cart comes from store
+  const items = useSelector((state) => state.cart);
+
   return (
     <div
       style={{
@@ -23,7 +29,8 @@ const Navbar = () => {
         >
           Cart
         </Link>
-        <span style={{ fontWeight: "bolder" }}> items : 0</span>
+        {/* imp - for display number of items always use .length method */}
+        <span style={{ fontWeight: "bolder" }}> items : {items.length}</span>
       </div>
     </div>
   );
