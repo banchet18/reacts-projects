@@ -4,7 +4,7 @@ let shopItemsData = [
     name: "Casual Shirt",
     price: 45,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "./images/img-1.jpg",
+    img: "./images/img-2.jpg",
   },
   {
     id: "ioytrhndcv",
