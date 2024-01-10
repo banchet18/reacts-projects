@@ -19,7 +19,7 @@ const Cart = () => {
         {cartItems.map((item) => {
           return (
             <div className="cartCard" key={item.id}>
-              <img src={item.image} alt="" />
+              <img src={item.img} alt="" />
               <h5>{item.title}</h5>
               <h5>{item.price}</h5>
               <button className="btn" onClick={() => handleRemove(item.id)}>
